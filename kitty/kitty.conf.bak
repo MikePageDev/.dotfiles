@@ -1,0 +1,9 @@
+font_family OpenDyslexicMono
+
+font_size 11
+
+cursor_blink_interval 0
+enable_audio_bell 0
+hide_window_decoreations yes
+
+window_padding_width 10

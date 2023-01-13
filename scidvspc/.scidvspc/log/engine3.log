@@ -1,0 +1,96 @@
+Scid vs. PC <--> Engine communication log file (engine 3)
+Engine: stockfis 14
+Command: /home/michael/data-drive/Dropbox/Chess/engins/stockfish_14_linux_x64_ssse/stockfish_14_x64_ssse
+Arguments:  
+Directory: /usr/bin
+Date: 11 Jan 2023
+
+Note: First line from engine seen; sending it initial commands now.
+Scid  : uci
+Engine: Stockfish 14 by the Stockfish developers (see AUTHORS file)
+Engine: id name Stockfish 14
+Engine: id author the Stockfish developers (see AUTHORS file)
+Engine: option name Debug Log File type string default 
+Engine: option name Threads type spin default 1 min 1 max 512
+Engine: option name Hash type spin default 16 min 1 max 33554432
+Engine: option name Clear Hash type button
+Engine: option name Ponder type check default false
+Engine: option name MultiPV type spin default 1 min 1 max 500
+Engine: option name Skill Level type spin default 20 min 0 max 20
+Engine: option name Move Overhead type spin default 10 min 0 max 5000
+Engine: option name Slow Mover type spin default 100 min 10 max 1000
+Engine: option name nodestime type spin default 0 min 0 max 10000
+Engine: option name UCI_Chess960 type check default false
+Engine: option name UCI_AnalyseMode type check default false
+Engine: option name UCI_LimitStrength type check default false
+Engine: option name UCI_Elo type spin default 1350 min 1350 max 2850
+Engine: option name UCI_ShowWDL type check default false
+Engine: option name SyzygyPath type string default <empty>
+Engine: option name SyzygyProbeDepth type spin default 1 min 1 max 100
+Engine: option name Syzygy50MoveRule type check default true
+Engine: option name SyzygyProbeLimit type spin default 7 min 0 max 7
+Engine: option name Use NNUE type check default true
+Engine: option name EvalFile type string default nn-3475407dc199.nnue
+Engine: uciok
+Scid  : isready
+Engine: readyok
+Scid  : position startpos moves e2e4 d7d5 e4d5 g8f6 d2d4 c8g4 f1e2 g4e2 g1e2 d8d5 e1g1 b8c6 c2c3 e7e5
+Scid  : go infinite
+Engine: info string NNUE evaluation using nn-3475407dc199.nnue enabled
+Engine: info depth 1 seldepth 1 multipv 1 score cp 19 nodes 46 nps 23000 tbhits 0 time 2 pv c3c4
+Engine: info depth 2 seldepth 2 multipv 1 score cp 125 nodes 203 nps 101500 tbhits 0 time 2 pv f1e1 e5e4
+Engine: info depth 3 seldepth 3 multipv 1 score cp 18 nodes 353 nps 176500 tbhits 0 time 2 pv c1e3 e5d4 e2d4
+Engine: info depth 4 seldepth 4 multipv 1 score cp 56 nodes 452 nps 226000 tbhits 0 time 2 pv f1e1 a7a6
+Engine: info depth 5 seldepth 5 multipv 1 score cp 107 nodes 517 nps 172333 tbhits 0 time 3 pv f1e1 a7a6 b1d2
+Engine: info depth 6 seldepth 6 multipv 1 score cp 449 nodes 807 nps 269000 tbhits 0 time 3 pv f1e1 f8e7 c3c4
+Engine: info depth 7 seldepth 7 multipv 1 score cp -9 nodes 4075 nps 407500 tbhits 0 time 10 pv c1e3 e5d4 e2d4 f8e7 b1d2 e8c8 d4c6 d5c6
+Engine: info depth 8 seldepth 11 multipv 1 score cp -21 nodes 9679 nps 439954 tbhits 0 time 22 pv c1e3 f8d6 b1d2 e5d4 c3c4 d5f5 e2d4 c6d4
+Engine: info depth 9 seldepth 12 multipv 1 score cp 27 nodes 12416 nps 443428 tbhits 0 time 28 pv d1a4 e5d4 e2d4 e8c8 d4c6 d5c6
+Engine: info depth 10 seldepth 12 multipv 1 score cp -12 nodes 32797 nps 475318 tbhits 0 time 69 pv c1e3 d5d7 b2b4 e5d4 e2d4 e8c8 b1d2 f6d5 d4c6 d7c6
+Engine: info depth 11 seldepth 14 multipv 1 score cp -30 nodes 61273 nps 547080 tbhits 0 time 112 pv c1e3 e8c8 d1a4 d5d7 b1d2 f6d5 d2c4 a7a6 a1e1 f7f6 h2h3
+Engine: info depth 12 seldepth 15 multipv 1 score cp -16 nodes 73248 nps 563446 tbhits 0 time 130 pv c1e3 e8c8 d1a4 e5d4 c3d4 d5d7 b1c3 a7a6 h2h3 c6e7 a4b3 e7f5
+Engine: info depth 13 seldepth 18 multipv 1 score cp -22 nodes 159104 nps 602666 tbhits 0 time 264 pv c1e3 e8c8 b1d2 e5d4 e2d4 c6d4 e3d4 f8c5 d2b3 c5d4 b3d4 a7a6
+Engine: info depth 14 seldepth 16 multipv 1 score cp -25 nodes 190571 nps 610804 tbhits 0 time 312 pv c1e3 e8c8 b1d2 e5d4 e2d4 f8c5 d2b3 c5d4 b3d4 h8e8 d1a4 c6d4 e3d4 a7a6 d4f6
+Engine: info depth 15 seldepth 21 multipv 1 score cp -41 nodes 289798 nps 635521 tbhits 0 time 456 pv c1e3 e8c8 b1d2 e5d4 e2d4 c6d4 e3d4 f8c5 d2b3 c5d4 d1d4 d5d4 b3d4 a7a6 d4f3 f6e4 f1e1
+Engine: info depth 16 seldepth 21 multipv 1 score cp -26 nodes 324890 nps 640808 tbhits 0 time 507 pv c1e3 e8c8 b1d2 e5d4 e2d4 c6d4 e3d4 f8c5 d2b3 c5d4 d1d4 d5d4 b3d4 a7a6 a1e1 h8e8 h2h4 f6d5 e1e8 d8e8 g2g3
+Engine: info depth 17 seldepth 25 multipv 1 score cp -31 nodes 665024 nps 711255 tbhits 0 time 935 pv c1e3 e8c8 b1d2 e5d4 e2d4 f8c5 d4c6 d5c6 e3c5 c6c5 d1c2 c5d5 d2b3 d5e4 c2e4 f6e4 h2h3 h8e8 f1e1 a7a6 a2a4 e4d6 b3d4 e8e1 a1e1
+Engine: info depth 18 seldepth 29 multipv 1 score cp -25 nodes 746283 nps 725250 hashfull 357 tbhits 0 time 1029 pv c1e3 e8c8 b1d2 e5d4 e2d4 f8c5 d4c6 d5c6 e3c5 c6c5 d1c2 c5d5 d2b3 d5e4 c2e4 f6e4 f1e1 h8e8 f2f3 e4d6 b3d4 e8e1 a1e1 d8d7
+Engine: info depth 19 seldepth 28 multipv 1 score cp -22 nodes 926632 nps 748491 hashfull 426 tbhits 0 time 1238 pv c1e3 e8c8 b1d2 e5d4 e2d4 f8c5 d4c6 d5c6 e3c5 c6c5 d1c2 g7g6 d2f3 h8e8 f1e1 c5d5 c2a4 a7a6 a4b3 d5b3 a2b3 e8e1 a1e1
+Engine: info depth 20 seldepth 28 multipv 1 score cp -15 nodes 1129602 nps 763760 hashfull 513 tbhits 0 time 1479 pv c1e3 e8c8 b1d2 e5d4 e2d4 f8c5 d4c6 d5c6 e3c5 c6c5 d1c2 g7g6 d2f3 h8e8 f1e1 e8e1 a1e1 d8e8 c3c4 c5a5 e1a1 c7c6 h2h3 f6e4 a2a3 f7f5
+Engine: info depth 21 seldepth 31 multipv 1 score cp -9 nodes 1386854 nps 773482 hashfull 600 tbhits 0 time 1793 pv c1e3 e8c8 b1d2 e5d4 e2d4 f8c5 d4c6 d5c6 e3c5 c6c5 d1c2 h8e8 d2f3 e8e4 f1e1 d8e8 e1e4 e8e4 c2d2 c5e7 a1e1 e4e1 f3e1
+Engine: info depth 22 seldepth 34 multipv 1 score cp -28 nodes 2162078 nps 788504 hashfull 793 tbhits 0 time 2742 pv c1e3 e8c8 b1d2 e5d4 e2d4 f8c5 d4c6 d5c6 e3c5 c6c5 d1c2 h8e8 d2f3 c5c4 c2f5 c4e6 f5c2 e6e4 c2b3 e4g6 f1e1 f6e4 a1d1 e4d6 d1a1 g6f5 h2h3 a7a6 c3c4 e8e1 a1e1
+Engine: info depth 23 seldepth 36 multipv 1 score cp -20 lowerbound nodes 2597749 nps 791514 hashfull 870 tbhits 0 time 3282 pv c1e3
+Engine: info depth 22 currmove c1e3 currmovenumber 1
+Engine: info depth 23 seldepth 36 multipv 1 score cp -12 lowerbound nodes 2891800 nps 793360 hashfull 906 tbhits 0 time 3645 pv c1e3
+Engine: info depth 21 currmove c1e3 currmovenumber 1
+Engine: info depth 21 currmove d4e5 currmovenumber 2
+Engine: info depth 21 currmove d1a4 currmovenumber 3
+Engine: info depth 21 currmove b1d2 currmovenumber 4
+Engine: info depth 21 currmove c3c4 currmovenumber 5
+Engine: info depth 21 currmove c1g5 currmovenumber 6
+Engine: info depth 21 currmove f1e1 currmovenumber 7
+Engine: info depth 21 currmove d1b3 currmovenumber 8
+Engine: info depth 21 currmove d1c2 currmovenumber 9
+Engine: info depth 21 currmove d1d3 currmovenumber 10
+Engine: info depth 21 currmove b2b3 currmovenumber 11
+Engine: info depth 21 currmove f2f4 currmovenumber 12
+Engine: info depth 21 currmove h2h3 currmovenumber 13
+Engine: info depth 21 currmove b2b4 currmovenumber 14
+Engine: info depth 21 currmove g2g3 currmovenumber 15
+Engine: info depth 21 currmove e2f4 currmovenumber 16
+Engine: info depth 21 currmove d1d2 currmovenumber 17
+Engine: info depth 21 currmove e2g3 currmovenumber 18
+Engine: info depth 21 currmove a2a4 currmovenumber 19
+Engine: info depth 21 currmove b1a3 currmovenumber 20
+Engine: info depth 21 currmove c1h6 currmovenumber 21
+Engine: info depth 21 currmove c1f4 currmovenumber 22
+Engine: info depth 21 currmove c1d2 currmovenumber 23
+Engine: info depth 21 currmove d1e1 currmovenumber 24
+Engine: info depth 21 currmove f2f3 currmovenumber 25
+Engine: info depth 21 currmove h2h4 currmovenumber 26
+Engine: info depth 21 currmove g1h1 currmovenumber 27
+Engine: info depth 21 currmove g2g4 currmovenumber 28
+Engine: info depth 21 currmove a2a3 currmovenumber 29
+Engine: info depth 23 seldepth 36 multipv 1 score cp -19 nodes 3066941 nps 795781 hashfull 919 tbhits 0 time 3854 pv c1e3 e8c8 b1d2 e5d4 e2d4 f8c5 d4c6 d5c6 e3c5 c6c5 d1c2 h8e8 d2f3 c5c4 c2f5 c4e6 f5a5 a7a6 f1e1 e6d5 a5d5 d8d5 g1f1 c8d7 g2g3 f6e4 a1d1 d5d1 e1d1 e4d6
+Scid  : stop
+Scid  : quit

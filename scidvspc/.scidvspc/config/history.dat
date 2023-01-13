@@ -1,0 +1,5 @@
+# Scid vs. PC combobox history lists
+
+set ::utils::history::listData(::plist::name) {page Webster Pardoe {Heath, Alan} heathalan59 ThomasJE subhalla slwayne AdyBuzzard Brakespeare}
+set ::utils::history::listData(::tourney::player) {{Page, Michael}}
+set ::utils::history::listData(HeaderSearchWhite) {{Wayne, Steven}}

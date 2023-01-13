@@ -1,0 +1,152 @@
+Scid vs. PC <--> Engine communication log file (engine 0)
+Engine: Toga
+Command: fruit
+Arguments:  
+Directory: /home/michael/.scidvspc
+Date: 11 Jan 2023
+
+Note: First line from engine seen; sending it initial commands now.
+Scid  : uci
+Engine: Toga II 1.3.1 UCI based on Fruit 2.1 by Thomas Gaksch and Fabien Letouzey. Settings by Dieter Eberle
+Engine: id name Toga II 1.3.1
+Engine: id author Thomas Gaksch and Fabien Letouzey
+Engine: option name Hash type spin default 16 min 4 max 1024
+Engine: option name Search Time type spin default 0 min 0 max 3600
+Engine: option name Search Depth type spin default 0 min 0 max 20
+Engine: option name Ponder type check default false
+Engine: option name OwnBook type check default true
+Engine: option name BookFile type string default performance.bin
+Engine: option name MultiPV type spin default 1 min 1 max 10
+Engine: option name NullMove Pruning type combo default Always var Always var Fail High var Never
+Engine: option name NullMove Reduction type spin default 3 min 1 max 4
+Engine: option name Verification Search type combo default Always var Always var Endgame var Never
+Engine: option name Verification Reduction type spin default 5 min 1 max 6
+Engine: option name History Pruning type check default true
+Engine: option name History Threshold type spin default 70 min 0 max 100
+Engine: option name Futility Pruning type check default true
+Engine: option name Futility Margin type spin default 100 min 0 max 500
+Engine: option name Extended Futility Margin type spin default 300 min 0 max 900
+Engine: option name Delta Pruning type check default true
+Engine: option name Delta Margin type spin default 50 min 0 max 500
+Engine: option name Quiescence Check Plies type spin default 1 min 0 max 2
+Engine: option name Material type spin default 100 min 0 max 400
+Engine: option name Piece Activity type spin default 100 min 0 max 400
+Engine: option name King Safety type spin default 100 min 0 max 400
+Engine: option name Pawn Structure type spin default 100 min 0 max 400
+Engine: option name Passed Pawns type spin default 100 min 0 max 400
+Engine: option name Toga Lazy Eval type check default true
+Engine: option name Toga Lazy Eval Margin type spin default 200 min 0 max 900
+Engine: option name Toga King Safety type check default false
+Engine: option name Toga King Safety Margin type spin default 1700 min 500 max 3000
+Engine: option name Toga Extended History Pruning type check default false
+Engine: uciok
+Scid  : isready
+Engine: readyok
+Scid  : position startpos moves e2e4 d7d5 e4d5 g8f6 d2d4 c8g4 f1e2 g4e2 g1e2 d8d5 e1g1 b8c6 c2c3 e7e5
+Scid  : go infinite
+Engine: info depth 1
+Engine: info multipv 1 depth 1 seldepth 4 score cp -20 time 1 nodes 8 pv d4e5 d5d1 f1d1 c6e5
+Engine: info multipv 1 depth 1 seldepth 6 score cp -4 time 1 nodes 38 pv c1e3
+Engine: info multipv 1 depth 1 seldepth 6 score cp 3 time 1 nodes 48 pv c1g5
+Engine: info multipv 1 depth 1 seldepth 7 score cp 5 time 1 nodes 97 pv f1e1
+Engine: info depth 1 seldepth 8 time 2 nodes 261 nps 0
+Engine: info depth 2
+Engine: info multipv 1 depth 2 seldepth 8 score cp -12 time 2 nodes 398 pv f1e1 e8c8
+Engine: info multipv 1 depth 2 seldepth 8 score cp 5 time 2 nodes 544 pv c1g5 e8c8 g5f6 g7f6
+Engine: info depth 2 seldepth 8 time 3 nodes 781 nps 0
+Engine: info depth 3
+Engine: info multipv 1 depth 3 seldepth 8 score cp -31 time 4 nodes 1154 pv c1g5 f6e4 f2f4
+Engine: info multipv 1 depth 3 seldepth 10 score cp -21 time 4 nodes 1591 pv f1e1 e8c8 c1g5
+Engine: info multipv 1 depth 3 seldepth 10 score cp -5 time 5 nodes 2008 pv c1e3 e8c8 b1d2
+Engine: info depth 3 seldepth 11 time 6 nodes 3175 nps 0
+Engine: info depth 4
+Engine: info multipv 1 depth 4 seldepth 12 score cp -25 time 8 nodes 4074 pv c1e3 e8c8 b1d2 c8b8
+Engine: info multipv 1 depth 4 seldepth 15 score cp -15 time 10 nodes 5230 pv c1g5 f6e4 f2f4 e4g5 f4g5 e5d4 e2d4 c6d4 c3d4 d5g5
+Engine: info multipv 1 depth 4 seldepth 15 score cp 3 time 13 nodes 6796 pv b2b3 e8c8 c3c4 d5e6
+Engine: info depth 4 seldepth 15 time 21 nodes 11134 nps 0
+Engine: info depth 5
+Engine: info multipv 1 depth 5 seldepth 15 score cp -20 time 29 nodes 15862 pv b2b3 e5d4 c3d4 f8b4 b1c3 b4c3 e2c3 d5d4
+Engine: info depth 5 seldepth 15 time 44 nodes 27266 nps 0
+Engine: info depth 6
+Engine: info multipv 1 depth 6 seldepth 16 score cp -33 time 58 nodes 38561 pv b2b3 e8c8 c3c4 d5d7 d4d5 c8b8
+Engine: info multipv 1 depth 6 seldepth 18 score cp -19 time 75 nodes 56943 pv c1g5 e8c8 b1d2 e5d4 g5f6 g7f6 c3d4 c6d4 e2d4 d5d4
+Engine: info multipv 1 depth 6 seldepth 18 score cp 5 time 117 nodes 102796 pv b1d2 e5d4 e2f4 d5d7 c3d4 c6d4 f1e1 f8e7
+Engine: info depth 6 seldepth 18 time 119 nodes 105480 nps 0
+Engine: info depth 7
+Engine: info multipv 1 depth 7 seldepth 20 score cp -43 upperbound time 187 nodes 186262 pv b1d2 e5d4 e2f4 d5f5 d2f3 d4c3 b2c3 f8c5 f1e1 f6e4 f3d4 c5d4 c3d4
+Engine: info multipv 1 depth 7 seldepth 20 score cp -20 time 232 nodes 240362 pv c1g5 e5d4 g5f6 g7f6 e2d4 e8c8 d1g4 c8b8 f1d1 f8d6
+Engine: info depth 7 seldepth 23 time 303 nodes 324479 nps 0
+Engine: info depth 8
+Engine: info multipv 1 depth 8 seldepth 24 score cp -14 time 401 nodes 441245 pv c1g5 e5d4 g5f6 g7f6 e2d4 e8c8 d1g4 c8b8 f1d1 f8d6 g4f3 d5f3 d4f3
+Engine: info depth 8 seldepth 24 time 542 nodes 606995 nps 0
+Engine: info depth 9
+Engine: info multipv 1 depth 9 seldepth 25 score cp -32 time 791 nodes 951795 pv c1g5 e8c8 b1d2 e5d4 d2f3 d4d3 e2d4 c6d4 c3d4 d5f5 g5f6 g7f6 a1c1
+Engine: info time 1005 nodes 1240000 nps 1234362 cpuload 993
+Engine: info hashfull 229
+Engine: info currmove c1e3 currmovenumber 4
+Engine: info currmove f1e1 currmovenumber 5
+Engine: info currmove d1d3 currmovenumber 6
+Engine: info currmove d1c2 currmovenumber 7
+Engine: info currmove d1a4 currmovenumber 8
+Engine: info currmove d1a4 currmovenumber 8
+Engine: info multipv 1 depth 9 seldepth 30 score cp -4 time 1355 nodes 1688432 pv d1a4 f8e7 d4e5 d5e5 e2d4 f6g4 d4f3 e5h5 h2h3 g4e5 f3e5 h5e5
+Engine: info currmove d4e5 currmovenumber 9
+Engine: info currmove a2a4 currmovenumber 10
+Engine: info currmove c1d2 currmovenumber 11
+Engine: info currmove f2f3 currmovenumber 12
+Engine: info currmove e2g3 currmovenumber 13
+Engine: info currmove h2h3 currmovenumber 14
+Engine: info currmove d1e1 currmovenumber 15
+Engine: info currmove a2a3 currmovenumber 16
+Engine: info currmove g1h1 currmovenumber 17
+Engine: info currmove h2h4 currmovenumber 18
+Engine: info currmove f2f4 currmovenumber 19
+Engine: info currmove g2g3 currmovenumber 20
+Engine: info currmove d1d2 currmovenumber 21
+Engine: info currmove b1a3 currmovenumber 22
+Engine: info currmove b2b4 currmovenumber 23
+Engine: info currmove c3c4 currmovenumber 24
+Engine: info currmove d1b3 currmovenumber 25
+Engine: info currmove e2f4 currmovenumber 26
+Engine: info currmove c1f4 currmovenumber 27
+Engine: info currmove g2g4 currmovenumber 28
+Engine: info currmove c1h6 currmovenumber 29
+Engine: info depth 9 seldepth 30 time 1406 nodes 1757525 nps 1249958
+Engine: info depth 10
+Engine: info currmove d1a4 currmovenumber 1
+Engine: info multipv 1 depth 10 seldepth 30 score cp -7 time 1875 nodes 2381899 pv d1a4 f8e7 d4e5 d5e5 e2d4 e8g8 d4c6 b7c6 c1f4 e5e2 b1d2 f6d5 f1e1
+Engine: info currmove c1g5 currmovenumber 2
+Engine: info currmove b1d2 currmovenumber 3
+Engine: info currmove b2b3 currmovenumber 4
+Engine: info currmove c1e3 currmovenumber 5
+Engine: info currmove f1e1 currmovenumber 6
+Engine: info currmove d1d3 currmovenumber 7
+Engine: info currmove d1c2 currmovenumber 8
+Engine: info currmove d4e5 currmovenumber 9
+Engine: info currmove a2a4 currmovenumber 10
+Engine: info currmove c1d2 currmovenumber 11
+Engine: info currmove f2f3 currmovenumber 12
+Engine: info currmove e2g3 currmovenumber 13
+Engine: info currmove h2h3 currmovenumber 14
+Engine: info currmove d1e1 currmovenumber 15
+Engine: info currmove a2a3 currmovenumber 16
+Engine: info currmove g1h1 currmovenumber 17
+Engine: info time 2005 nodes 2560000 nps 1276896 cpuload 996
+Engine: info hashfull 513
+Engine: info currmove h2h4 currmovenumber 18
+Engine: info currmove f2f4 currmovenumber 19
+Engine: info currmove g2g3 currmovenumber 20
+Engine: info currmove d1d2 currmovenumber 21
+Engine: info currmove b1a3 currmovenumber 22
+Engine: info currmove b2b4 currmovenumber 23
+Engine: info currmove c3c4 currmovenumber 24
+Engine: info currmove d1b3 currmovenumber 25
+Engine: info currmove e2f4 currmovenumber 26
+Engine: info currmove c1f4 currmovenumber 27
+Engine: info currmove g2g4 currmovenumber 28
+Engine: info currmove c1h6 currmovenumber 29
+Engine: info depth 10 seldepth 30 time 2050 nodes 2614994 nps 1275593
+Engine: info depth 11
+Engine: info currmove d1a4 currmovenumber 1
+Scid  : stop
+Scid  : quit

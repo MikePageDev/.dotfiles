@@ -1,0 +1,50 @@
+# Analysis Engines configuration for Scid vs. PC 4.22
+
+engine {
+  Name Toga
+  Cmd  fruit
+  Args {}
+  Dir  /home/michael/.scidvspc
+  Elo  0
+  Time 1673479174
+  URL  {}
+  UCI  1
+  UCIoptions {}
+}
+
+engine {
+  Name Phalanx
+  Cmd  phalanx
+  Args {}
+  Dir  /home/michael/.scidvspc
+  Elo  0
+  Time 0
+  URL  {}
+  UCI  0
+  UCIoptions {}
+}
+
+engine {
+  Name Scidlet
+  Cmd  scidlet
+  Args {}
+  Dir  .
+  Elo  0
+  Time 0
+  URL  {}
+  UCI  0
+  UCIoptions {}
+}
+
+engine {
+  Name {stockfis 14}
+  Cmd  /home/michael/data-drive/Dropbox/Chess/engins/stockfish_14_linux_x64_ssse/stockfish_14_x64_ssse
+  Args {}
+  Dir  .
+  Elo  0
+  Time 1673479158
+  URL  {}
+  UCI  1
+  UCIoptions {}
+}
+

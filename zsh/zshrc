@@ -1,0 +1,25 @@
+# Michael Page zsh config
+
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="robbyrussell"
+HYPHEN_INSENSITIVE="true"
+COMPLETION_WAITING_DOTS="true"
+
+plugins=(
+  git
+  tmux
+  lando
+)
+
+source $ZSH/oh-my-zsh.sh
+
+#--------------------------------------------------------------------------
+# Configuration
+#--------------------------------------------------------------------------
+
+typeset -U path cdpath fpath
+path=(
+    $HOME/.local/bin
+    $path
+)

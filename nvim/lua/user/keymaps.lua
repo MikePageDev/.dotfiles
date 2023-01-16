@@ -39,7 +39,7 @@ vim.keymap.set('v', 'y', 'myy`y')
 
 vim.keymap.set('n', 'q;', ';q')
 
-map("n", "<C-p>", "<cmd>Telescop find_files<cr>", opts)
+-- map("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
 
 vim.keymap.set('n', '<Leader>k', ':nohlsearch<CR>')
 

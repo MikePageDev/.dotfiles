@@ -46,7 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "tpope/vim-commentary" -- Comment lines
   use "tpope/vim-surround" -- Add, change and delete surrounding text
-  -- use "tpope/vim-sleuth" -- Indent autodetection
+  use "tpope/vim-sleuth" -- Indent autodetection
   use "tpope/vim-repeat" -- Allow command repeat
   use "sheerun/vim-polyglot" -- Add more Language
   use "christoomey/vim-tmux-navigator" -- Navigate seamlessly between Vim windows and Tmux panes
@@ -72,25 +72,7 @@ return packer.startup(function(use)
     end,
   }
 
-  --use "kyazdani42/nvim-web-devicons"
-  --use "kyazdani42/nvim-tree.lua"
-  --use "akinsho/bufferline.nvim"
-  --use "moll/vim-bbye"
-  --use "nvim-lualine/lualine.nvim"
-  --use "akinsho/toggleterm.nvim"
-  --use "ahmedkhalf/project.nvim"
-  --use "lewis6991/impatient.nvim"
-  --use "lukas-reineke/indent-blankline.nvim"
-  --use "goolord/alpha-nvim"
-  --use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
-  --use "folke/which-key.nvim"
-
   -- Colorschemes
-  -- use {"jessarcher/onedark.nvim",
-  --   config = function()
-  --     vim.cmd("colorscheme onedark")
-  --   end,
-  -- }
   use {"folke/tokyonight.nvim",
     config = function()
       vim.cmd("colorscheme tokyonight-night")
@@ -110,23 +92,33 @@ return packer.startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   ---- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  -- use "neovim/nvim-lspconfig" -- enable LSP
+  -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  -- use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+  -- use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
-  ---- Telescope
-  use "nvim-telescope/telescope.nvim"
+ -- Telescope
+use({
+  'nvim-telescope/telescope.nvim',
+  requires = {
+    'nvim-lua/plenary.nvim',
+    'kyazdani42/nvim-web-devicons',
+    'nvim-telescope/telescope-live-grep-args.nvim',
+    { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+  },
+  config = function()
+    require('user/plugins/telescope')
+  end,
+}) 
 
-  ---- Treesitter
-  --use {
-  --  "nvim-treesitter/nvim-treesitter",
-  --  run = ":TSUpdate",
-  --}
-  --use "JoosepAlviste/nvim-ts-context-commentstring"
-
-  -- Git
-  --use "lewis6991/gitsigns.nvim"
+-- File tree sidebar
+use({
+  'kyazdani42/nvim-tree.lua',
+  requires = 'kyazdani42/nvim-web-devicons',
+  config = function()
+    require('user/plugins/file-tree')
+  end,
+})
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

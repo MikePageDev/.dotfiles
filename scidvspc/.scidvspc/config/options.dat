@@ -3,7 +3,7 @@
 # If you edit this file, you must preserve valid its Tcl
 # format or it will not set your Scid options properly.
 
-set boardSize 90
+set boardSize 80
 set boardStyle Merida1
 set language E
 set ::pgn::showColor 1
@@ -171,7 +171,7 @@ set ::commenteditor::State(markColor) paleGreen2
 set ::commenteditor::State(markType) circle
 set boardfile_lite emptySquare
 set boardfile_dark emptySquare
-set ::file::finder::data(dir) {/home/michael/data-drive/Dropbox/Chess/games/OTB/Bedfordshire Campionship 2023}
+set ::file::finder::data(dir) /home/michael/data-drive/Dropbox/Chess/databases
 set ::file::finder::data(sort) name
 set ::file::finder::data(Scid) 1
 set ::file::finder::data(PGN) 1
@@ -212,8 +212,8 @@ set ::tools::graphs::type Auto
 set maintFlag 1
 set useGraphFigurine 0
 set photosMinimized 0
-set bookmarks(gamehistory) {{g {my_otb_games:  Whiteside - Page, 1-0,  Open University (1) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 34 1 {Whiteside, Robert} {Page, Michael} 2023 {Open University, Milton Keynes} 1 1-0} {g {round-1-robert-whiteside-black.pgn:  Whiteside - Page, 1-0,  Open University (1) 2023} {/home/michael/data-drive/Dropbox/Chess/games/OTB/Bedfordshire Campionship 2023/round-1-robert-whiteside-black.pgn} 1 1 {Whiteside, Robert} {Page, Michael} 2023 {Open University, Milton Keynes} 1 1-0} {g {my_otb_games:  Page - Heath, 0-1,  OU (1) 2022} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 26 1 {Page, Michael} {Heath, Alan} 2022 OU 1 0-1} {g {my_otb_games:  Page - Grimditch, 1-0,  Bedford (3) 2022} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Page, Michael} {Grimditch, James} 2022 Bedford 3 1-0} {g {lichess_heathalan59_2023-01-06.pgn:  heathalan59 - DiegoAlvarez85, 1-0,  https://lichess.org/MhlzQlo8 2021} {/home/michael/data-drive/Dropbox/Chess/games/players/Heath, Alan/lichess_heathalan59_2023-01-06.pgn} 1 1 heathalan59 DiegoAlvarez85 2021 https://lichess.org/MhlzQlo8 ? 1-0}}
-set playerInfoHistory {{Page, Michael} {Pardoe, David} {Heath, Alan} heathalan59 {Wayne, Steven} slwayne {Wayne, Steve} Razor2005 Razor05 {Evans, Thomas}}
+set bookmarks(gamehistory) {{g {my_otb_games:  Singleton - Page, =-=,  Open University (1) 2021} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Singleton, Luke} {Page, Michael} 2021 {Open University, Milton Keynes} 1 =-=} {g {chess_com_games_2023-02-05.pgn:  Nandorgh - WebberLupusPatrem, 1-0,  Chess.com (-) 2022} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2023-02-05.pgn} 1 1 Nandorgh WebberLupusPatrem 2022 Chess.com - 1-0} {g {chess_com_games_2023-02-05 (1).pgn:  DiscoSTU666 - WebberLupusPatrem, 1-0,  Chess.com (3) 2022} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2023-02-05 (1).pgn} 1 1 DiscoSTU666 WebberLupusPatrem 2022 Chess.com 3 1-0} {g {chess_com_games_2022-04-08.pgn:  WebberLupusPatrem - platonas75, 0-1,  Chess.com (1) 2021} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2022-04-08.pgn} 1 1 WebberLupusPatrem platonas75 2021 Chess.com 1 0-1} {g {chess_com_games_2022-04-08 (15).pgn:  BetterLuckNextT1me - WebberLupusPatrem, 1-0,  Chess.com (-) 2020} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2022-04-08 (15).pgn} 1 1 BetterLuckNextT1me WebberLupusPatrem 2020 Chess.com - 1-0}}
+set playerInfoHistory {{Page, Michael} {Webber, David} Razor05 WebberLupusPatrem {Pardoe, David} {Heath, Alan} heathalan59 {Wayne, Steven} slwayne {Wayne, Steve}}
 set defaultDBs {}
 set tbOnline Nalimov
 set glistSize 12
@@ -467,7 +467,7 @@ set initialDir(epd) /home/michael
 set initialDir(stm) /home/michael
 set initialDir(sso) /home/michael
 set initialDir(sff) /home/michael
-set initialDir(pgn) {/home/michael/data-drive/Dropbox/Chess/games/OTB/Bedfordshire Campionship 2023}
+set initialDir(pgn) {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david}
 set initialDir(report) /home/michael
 set initialDir(tablebase1) {}
 set initialDir(tablebase2) {}

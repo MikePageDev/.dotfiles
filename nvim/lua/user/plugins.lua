@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use "tpope/vim-surround" -- Add, change and delete surrounding text
   use "tpope/vim-sleuth" -- Indent autodetection
   use "tpope/vim-repeat" -- Allow command repeat
+  use('tpope/vim-unimpaired') -- Pairs of handy bracket mappings, like [b and ]b.
   use "sheerun/vim-polyglot" -- Add more Language
   use "christoomey/vim-tmux-navigator" -- Navigate seamlessly between Vim windows and Tmux panes
   use "farmergreg/vim-lastplace" -- Jump to the last location when opening a file
@@ -76,6 +77,13 @@ return packer.startup(function(use)
   use {"folke/tokyonight.nvim",
     config = function()
       vim.cmd("colorscheme tokyonight-night")
+
+      vim.api.nvim_set_hl(0, 'StatusLineNonText', {
+      fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
+      bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
+    })
+
+    vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
     end,
   }
   -- cmp plugins
@@ -91,34 +99,90 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-  ---- LSP
-  -- use "neovim/nvim-lspconfig" -- enable LSP
-  -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  -- use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  -- use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-
- -- Telescope
-use({
-  'nvim-telescope/telescope.nvim',
+  -- LSP
+   use({
+  'neovim/nvim-lspconfig',
   requires = {
-    'nvim-lua/plenary.nvim',
-    'kyazdani42/nvim-web-devicons',
-    'nvim-telescope/telescope-live-grep-args.nvim',
-    { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
   },
   config = function()
-    require('user/plugins/telescope')
-  end,
-}) 
-
--- File tree sidebar
-use({
-  'kyazdani42/nvim-tree.lua',
-  requires = 'kyazdani42/nvim-web-devicons',
-  config = function()
-    require('user/plugins/file-tree')
+    require('user/plugins/lspconfig')
   end,
 })
+
+  -- Telescope
+  use({
+    'nvim-telescope/telescope.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'kyazdani42/nvim-web-devicons',
+      'nvim-telescope/telescope-live-grep-args.nvim',
+      { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+    },
+    config = function()
+      require('user/plugins/telescope')
+    end,
+  }) 
+
+  -- File tree sidebar
+  -- use({
+  --   'kyazdani42/nvim-tree.lua',
+  --   requires = 'kyazdani42/nvim-web-devicons',
+  --   config = function()
+  --     require('user/plugins/file-tree')
+  --   end,
+  -- })
+
+  -- A Status line.
+  use({
+    'nvim-lualine/lualine.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      require('user/plugins/lualine')
+    end,
+  })
+
+  -- Display buffers as tabs.
+  use({
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    after = 'tokyonight.nvim',
+    config = function()
+      require('user/plugins/bufferline')
+    end,
+  })
+
+  -- Display indentation lines.
+  use({
+    'lukas-reineke/indent-blankline.nvim',
+    config = function()
+      require('user/plugins/indent-blankline')
+    end,
+  })
+
+-- Add a dashboard.
+use({
+  'glepnir/dashboard-nvim',
+  config = function()
+    require('user/plugins/dashboard-nvim')
+  end,
+})
+  --
+  -- --- Floating terminal.
+  use({
+    'voldikss/vim-floaterm',
+    config = function()
+      vim.g.floaterm_width = 0.8
+      vim.g.floaterm_height = 0.8
+      vim.keymap.set('n', '<F1>', ':FloatermToggle<CR>')
+      vim.keymap.set('t', '<F1>', '<C-\\><C-n>:FloatermToggle<CR>')
+      vim.cmd([[
+        highlight link Floaterm CursorLine
+        highlight link FloatermBorder CursorLineBg
+      ]])
+    end
+  })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

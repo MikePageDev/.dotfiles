@@ -64,7 +64,7 @@ set ::windows::switcher::icons 1
 set ::windows::switcher::confirmCopy 1
 set locale(numeric) .,
 set spellCheckFile /home/travis/scidbuild/usr/share/scid/spelling.ssp
-set ::splash::keepopen 1
+set ::splash::keepopen 0
 set autoRaise 1
 set autoIconify 1
 set windowsDock 1
@@ -212,8 +212,8 @@ set ::tools::graphs::type Auto
 set maintFlag 1
 set useGraphFigurine 0
 set photosMinimized 0
-set bookmarks(gamehistory) {{g {my_otb_games:  Singleton - Page, =-=,  Open University (1) 2021} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Singleton, Luke} {Page, Michael} 2021 {Open University, Milton Keynes} 1 =-=} {g {chess_com_games_2023-02-05.pgn:  Nandorgh - WebberLupusPatrem, 1-0,  Chess.com (-) 2022} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2023-02-05.pgn} 1 1 Nandorgh WebberLupusPatrem 2022 Chess.com - 1-0} {g {chess_com_games_2023-02-05 (1).pgn:  DiscoSTU666 - WebberLupusPatrem, 1-0,  Chess.com (3) 2022} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2023-02-05 (1).pgn} 1 1 DiscoSTU666 WebberLupusPatrem 2022 Chess.com 3 1-0} {g {chess_com_games_2022-04-08.pgn:  WebberLupusPatrem - platonas75, 0-1,  Chess.com (1) 2021} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2022-04-08.pgn} 1 1 WebberLupusPatrem platonas75 2021 Chess.com 1 0-1} {g {chess_com_games_2022-04-08 (15).pgn:  BetterLuckNextT1me - WebberLupusPatrem, 1-0,  Chess.com (-) 2020} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2022-04-08 (15).pgn} 1 1 BetterLuckNextT1me WebberLupusPatrem 2020 Chess.com - 1-0}}
-set playerInfoHistory {{Page, Michael} {Webber, David} Razor05 WebberLupusPatrem {Pardoe, David} {Heath, Alan} heathalan59 {Wayne, Steven} slwayne {Wayne, Steve}}
+set bookmarks(gamehistory) {{g {my_otb_games:  Webber - Page, 0-1,  OU (5) 2022} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 26 1 {Webber, David} {Page, Michael} 2022 OU 5 0-1} {g {my_otb_games:  Page - Webber, 0-1,  David's House (4) 2022} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 16 1 {Page, Michael} {Webber, David} 2022 {David's House} 4 0-1} {g {my_otb_games:  Singleton - Page, =-=,  Open University (1) 2021} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Singleton, Luke} {Page, Michael} 2021 {Open University, Milton Keynes} 1 =-=} {g {base:  Impfgegner1 - Solloway, 1-0,  https://lichess.org/9Ibsjzto 2023} /home/michael/data-drive/Dropbox/Chess/databases/base 1 1 Impfgegner1 {Solloway, Colin J} 2023 https://lichess.org/9Ibsjzto ? 1-0} {g {chess_com_games_2023-02-05.pgn:  Nandorgh - WebberLupusPatrem, 1-0,  Chess.com (-) 2022} {/home/michael/data-drive/Dropbox/Chess/games/To be entered/david/chess_com_games_2023-02-05.pgn} 1 1 Nandorgh WebberLupusPatrem 2022 Chess.com - 1-0}}
+set playerInfoHistory {{Webber, David} {Page, Michael} Razor05 WebberLupusPatrem {Pardoe, David} {Heath, Alan} heathalan59 {Wayne, Steven} slwayne {Wayne, Steve}}
 set defaultDBs {}
 set tbOnline Nalimov
 set glistSize 12

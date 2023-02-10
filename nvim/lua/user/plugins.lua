@@ -56,11 +56,11 @@ return packer.startup(function(use)
   use "jessarcher/vim-heritage" -- Creates parent dirs on save.
 
   -- Automatically add closing brackets
-  use {"windwp/nvim-autopairs", config = function ()
-      require("nvim-autopairs").setup()
-    end,
-  }
-
+  -- use {"windwp/nvim-autopairs", config = function ()
+  --     require("nvim-autopairs").setup()
+  --   end,
+  -- }
+  
   -- Add smoth scrolling
   use {"karb94/neoscroll.nvim", config = function ()
       require("neoscroll").setup()
@@ -87,13 +87,21 @@ return packer.startup(function(use)
     end,
   }
   -- cmp plugins
-  -- use "hrsh7th/nvim-cmp"
-  -- use {"hrsh7th/cmp-buffer", requires = { "hrsh7th/nvim-cmp" }} -- buffer completions
-  -- use {"hrsh7th/cmp-path", requires = { "hrsh7th/nvim-cmp" }} -- path completions
-  -- use {"hrsh7th/cmp-cmdline", requires = { "hrsh7th/nvim-cmp" }} -- cmdline completions
-  -- use {"saadparwaiz1/cmp_luasnip", requires = { "hrsh7th/nvim-cmp" }} -- snippet completions
-  -- use {"hrsh7th/cmp-nvim-lsp", requires = { "hrsh7th/nvim-cmp" }}
-  -- use {"hrsh7th/cmp-nvim-lua", requires = { "hrsh7th/nvim-cmp" }}
+  use({
+    'hrsh7th/nvim-cmp',
+    requires = {
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-nvim-lsp-signature-help',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+      'onsails/lspkind-nvim',
+    },
+    config = function()
+      require('user/plugins/cmp')
+    end,
+  })
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -105,6 +113,7 @@ return packer.startup(function(use)
   requires = {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
+    'b0o/schemastore.nvim',
   },
   config = function()
     require('user/plugins/lspconfig')
@@ -126,13 +135,13 @@ return packer.startup(function(use)
   }) 
 
   -- File tree sidebar
-  -- use({
-  --   'kyazdani42/nvim-tree.lua',
-  --   requires = 'kyazdani42/nvim-web-devicons',
-  --   config = function()
-  --     require('user/plugins/file-tree')
-  --   end,
-  -- })
+  use({
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      require('user/plugins/file-tree')
+    end,
+  })
 
   -- A Status line.
   use({
@@ -168,8 +177,8 @@ use({
     require('user/plugins/dashboard-nvim')
   end,
 })
-  --
-  -- --- Floating terminal.
+
+  -- Floating terminal.
   use({
     'voldikss/vim-floaterm',
     config = function()

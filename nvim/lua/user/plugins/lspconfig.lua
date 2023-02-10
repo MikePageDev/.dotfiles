@@ -2,8 +2,10 @@
 require('mason').setup()
 require('mason-lspconfig').setup({ automatic_installation = true })
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+
 -- PHP
-require('lspconfig').intelephense.setup({})
+require('lspconfig').intelephense.setup({ capabilities = capabilities })
 
 -- Vue, JavaScript, TypeScript
 require('lspconfig').volar.setup({
@@ -12,19 +14,19 @@ require('lspconfig').volar.setup({
   -- This drastically improves the responsiveness of diagnostic updates on change
   filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
 })
-
+ 
 -- Tailwind CSS
 require('lspconfig').tailwindcss.setup({ capabilities = capabilities })
 
 -- JSON
--- require('lspconfig').jsonls.setup({
---   capabilities = capabilities,
---   settings = {
---     json = {
---       schemas = require('schemastore').json.schemas(),
---     },
---   },
--- })
+require('lspconfig').jsonls.setup({
+  capabilities = capabilities,
+  settings = {
+    json = {
+      schemas = require('schemastore').json.schemas(),
+    },
+  },
+})
 
 -- null-ls
 -- require('null-ls').setup({

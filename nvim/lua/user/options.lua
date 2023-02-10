@@ -20,6 +20,7 @@ opt.number = true
 opt.relativenumber = true
 
 opt.wildmode= 'longest:full,full'
+opt.completeopt = 'menuone,longest,preview'
 
 opt.title = true
 

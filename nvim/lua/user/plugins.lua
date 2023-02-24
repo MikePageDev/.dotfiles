@@ -56,12 +56,12 @@ return packer.startup(function(use)
   use "jessarcher/vim-heritage" -- Creates parent dirs on save.
 
   -- Automatically add closing brackets
-  -- use {"windwp/nvim-autopairs", config = function ()
-  --     require("nvim-autopairs").setup()
-  --   end,
-  -- }
-  -- Add smoth scrolling
+  use {"windwp/nvim-autopairs", config = function ()
+      require("nvim-autopairs").setup()
+    end,
+  }
 
+  -- Add smoth scrolling
   use {"karb94/neoscroll.nvim", config = function ()
       require("neoscroll").setup()
     end,

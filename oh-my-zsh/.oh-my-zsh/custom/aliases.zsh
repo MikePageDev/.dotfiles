@@ -8,6 +8,6 @@ alias tw='npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch'
 alias pencil='pencil --disable-seccomp-filter-sandbox'
 
 # Repros
-alias repros='cd ~/data-drive/repros/' #All repros
+alias repos='cd ~/data-drive/repos/' #All repros
 
 

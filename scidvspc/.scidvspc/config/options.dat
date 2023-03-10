@@ -212,8 +212,8 @@ set ::tools::graphs::type Auto
 set maintFlag 1
 set useGraphFigurine 0
 set photosMinimized 0
-set bookmarks(gamehistory) {{g {base:  ? - ?, *,  ? 0} /home/michael/data-drive/Dropbox/Chess/databases/base 1 1 ? ? 0 ? ? *} {g {lichess_study_milton-keynes-u1800-knockout-202223_round-1-colin-solloway-black_by_Razor2005_2023.01.27.pgn:  Solloway - Page, 1-0,  Open University (1) 2023} {/home/michael/data-drive/Dropbox/Chess/games/OTB/Milton Keynes U1800 Knockout 2022-23/lichess_study_milton-keynes-u1800-knockout-202223_round-1-colin-solloway-black_by_Razor2005_2023.01.27.pgn} 1 1 {Solloway, Colin J} {Page, Michael} 2023 {Open University, Milton Keynes} 1 1-0} {g {my_otb_games:  Solloway - Page, 1-0,  Open University (1) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 39 1 {Solloway, Colin J} {Page, Michael} 2023 {Open University, Milton Keynes} 1 1-0} {g {my_otb_games:  Brooks - Page, 1-0,  Daventry (6) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 37 1 {Brooks, Phil J} {Page, Michael} 2023 {Daventry, ENG} 6 1-0} {g {my_otb_games:  Page - Vaidyanathan, 0-1,  Daventry (5) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 36 1 {Page, Michael} {Vaidyanathan, Adithya} 2023 {Daventry, ENG} 5 0-1}}
-set playerInfoHistory {{Elwin, Adrian G} {Webber, David} {Page, Michael} Razor05 WebberLupusPatrem {Pardoe, David} {Heath, Alan} heathalan59 {Wayne, Steven} slwayne}
+set bookmarks(gamehistory) {{g {base:  Ronka - Araujo Filho, 1-0,  chess.com (6) 2022} /home/michael/data-drive/Dropbox/Chess/databases/base 5781472 1 {Ronka, E} {Araujo Filho, Luiz Antonio Coel} 2022 {chess.com INT} 6 1-0} {g {base:  ? - ?, *,  ? 0} /home/michael/data-drive/Dropbox/Chess/databases/base 1 1 ? ? 0 ? ? *} {g {lichess_Sage2604_2023-02-28.pgn:  rcpfreeman - Sage2604, 1-0,  https://lichess.org/38VLuxnc 2021} {/home/michael/data-drive/Dropbox/Chess/games/players/Elwin, Adrian G/lichess_Sage2604_2023-02-28.pgn} 1 1 rcpfreeman Sage2604 2021 https://lichess.org/38VLuxnc ? 1-0} {g {lichess_study_milton-keynes-u1800-knockout-202223_round-1-colin-solloway-black_by_Razor2005_2023.01.27.pgn:  Solloway - Page, 1-0,  Open University (1) 2023} {/home/michael/data-drive/Dropbox/Chess/games/OTB/Milton Keynes U1800 Knockout 2022-23/lichess_study_milton-keynes-u1800-knockout-202223_round-1-colin-solloway-black_by_Razor2005_2023.01.27.pgn} 1 1 {Solloway, Colin J} {Page, Michael} 2023 {Open University, Milton Keynes} 1 1-0} {g {my_otb_games:  Solloway - Page, 1-0,  Open University (1) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 39 1 {Solloway, Colin J} {Page, Michael} 2023 {Open University, Milton Keynes} 1 1-0}}
+set playerInfoHistory {{Elwin, Adrian G} Sage2604 {Webber, David} {Page, Michael} Razor05 WebberLupusPatrem {Pardoe, David} {Heath, Alan} heathalan59 {Wayne, Steven}}
 set defaultDBs {}
 set tbOnline Nalimov
 set glistSize 12
@@ -467,7 +467,7 @@ set initialDir(epd) /home/michael
 set initialDir(stm) /home/michael
 set initialDir(sso) /home/michael
 set initialDir(sff) /home/michael
-set initialDir(pgn) {/home/michael/data-drive/Dropbox/Chess/games/OTB/Milton Keynes U1800 Knockout 2022-23}
+set initialDir(pgn) {/home/michael/data-drive/Dropbox/Chess/games/players/Elwin, Adrian G}
 set initialDir(report) /home/michael
 set initialDir(tablebase1) {}
 set initialDir(tablebase2) {}

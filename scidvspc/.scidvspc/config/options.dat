@@ -171,7 +171,7 @@ set ::commenteditor::State(markColor) paleGreen2
 set ::commenteditor::State(markType) circle
 set boardfile_lite emptySquare
 set boardfile_dark emptySquare
-set ::file::finder::data(dir) /home/michael/data-drive/Dropbox/Chess/databases
+set ::file::finder::data(dir) {/home/michael/data-drive/Dropbox/Chess/games/players/Sumit Bhalla}
 set ::file::finder::data(sort) name
 set ::file::finder::data(Scid) 1
 set ::file::finder::data(PGN) 1
@@ -212,14 +212,14 @@ set ::tools::graphs::type Auto
 set maintFlag 1
 set useGraphFigurine 0
 set photosMinimized 0
-set bookmarks(gamehistory) {{g {base:  Ronka - Araujo Filho, 1-0,  chess.com (6) 2022} /home/michael/data-drive/Dropbox/Chess/databases/base 5781472 1 {Ronka, E} {Araujo Filho, Luiz Antonio Coel} 2022 {chess.com INT} 6 1-0} {g {base:  ? - ?, *,  ? 0} /home/michael/data-drive/Dropbox/Chess/databases/base 1 1 ? ? 0 ? ? *} {g {lichess_Sage2604_2023-02-28.pgn:  rcpfreeman - Sage2604, 1-0,  https://lichess.org/38VLuxnc 2021} {/home/michael/data-drive/Dropbox/Chess/games/players/Elwin, Adrian G/lichess_Sage2604_2023-02-28.pgn} 1 1 rcpfreeman Sage2604 2021 https://lichess.org/38VLuxnc ? 1-0} {g {lichess_study_milton-keynes-u1800-knockout-202223_round-1-colin-solloway-black_by_Razor2005_2023.01.27.pgn:  Solloway - Page, 1-0,  Open University (1) 2023} {/home/michael/data-drive/Dropbox/Chess/games/OTB/Milton Keynes U1800 Knockout 2022-23/lichess_study_milton-keynes-u1800-knockout-202223_round-1-colin-solloway-black_by_Razor2005_2023.01.27.pgn} 1 1 {Solloway, Colin J} {Page, Michael} 2023 {Open University, Milton Keynes} 1 1-0} {g {my_otb_games:  Solloway - Page, 1-0,  Open University (1) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 39 1 {Solloway, Colin J} {Page, Michael} 2023 {Open University, Milton Keynes} 1 1-0}}
-set playerInfoHistory {{Elwin, Adrian G} Sage2604 {Webber, David} {Page, Michael} Razor05 WebberLupusPatrem {Pardoe, David} {Heath, Alan} heathalan59 {Wayne, Steven}}
+set bookmarks(gamehistory) {{g {base:  Bhalla - Ymanda, 1-0,  https://lichess.org/pOLiNknx 2022} /home/michael/data-drive/Dropbox/Chess/databases/base 5789951 1 {Bhalla, Sumit} Ymanda 2022 https://lichess.org/pOLiNknx ? 1-0} {g {base:  Bhalla - Ymanda, 1-0,  https://lichess.org/pOLiNknx 2022} /home/michael/data-drive/Dropbox/Chess/databases/base 5789816 1 {Bhalla, Sumit} Ymanda 2022 https://lichess.org/pOLiNknx ? 1-0} {g {base:  Bhalla - Elwin, 0-1,  https://lichess.org/0jSUnbd5 2021} /home/michael/data-drive/Dropbox/Chess/databases/base 5789619 1 {Bhalla, Sumit} {Elwin, Adrian G} 2021 https://lichess.org/0jSUnbd5 ? 0-1} {g {base:  Bhalla - messimessi, 1-0,  https://lichess.org/mpbnEH9y 2022} /home/michael/data-drive/Dropbox/Chess/databases/base 5784361 1 {Bhalla, Sumit} messimessi 2022 https://lichess.org/mpbnEH9y ? 1-0} {g {base:  Bhalla - maher2010, 0-1,  https://lichess.org/kJFXYKwr 2022} /home/michael/data-drive/Dropbox/Chess/databases/base 5784360 1 {Bhalla, Sumit} maher2010 2022 https://lichess.org/kJFXYKwr ? 0-1}}
+set playerInfoHistory {{Bhalla, Sumit} {Bryant, Richard BE} {Bryant, Richard B E} {Sloan, Cecil} {Elwin, Adrian G} Sage2604 {Webber, David} {Page, Michael} Razor05 WebberLupusPatrem}
 set defaultDBs {}
 set tbOnline Nalimov
 set glistSize 12
 set glexport {g6: w13 W4  b13 B4  r3:m2 y4 s11 o4}
 set glistColOrder {0 1 2 3 4 5 6 7 8 9 10 11 15 17 18 19 20}
-set glistColWidth {68 190 163 40 78 80 319 55 55 55 222 24 93 120 125 55 111 63 54 70 103 120}
+set glistColWidth {68 190 163 40 78 106 319 55 55 55 222 24 93 120 125 55 111 63 54 70 103 120}
 set glistColAnchor {e w w e e w w e e e w e e e e e w c e e w e}
 set addRatings(overwrite) 0
 set addRatings(filter) 1
@@ -467,7 +467,7 @@ set initialDir(epd) /home/michael
 set initialDir(stm) /home/michael
 set initialDir(sso) /home/michael
 set initialDir(sff) /home/michael
-set initialDir(pgn) {/home/michael/data-drive/Dropbox/Chess/games/players/Elwin, Adrian G}
+set initialDir(pgn) {/home/michael/data-drive/Dropbox/Chess/games/players/Sumit Bhalla}
 set initialDir(report) /home/michael
 set initialDir(tablebase1) {}
 set initialDir(tablebase2) {}

@@ -1,5 +1,5 @@
 # Scid vs. PC combobox history lists
 
-set ::utils::history::listData(::plist::name) {bhalla Bryant Sloan Sage2604 Elwin Bodily webb page Webber Razor}
+set ::utils::history::listData(::plist::name) {Borrowdale Edwards page Josue Estevez Fernandez wayne steve bhalla Bryant}
 set ::utils::history::listData(::tourney::player) {{Page, Michael}}
 set ::utils::history::listData(HeaderSearchWhite) {{Wayne, Steven}}

@@ -6,9 +6,12 @@ ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 
+bindkey -v
+
 plugins=(
   git
   tmux
+  vi-mode z
   lando
 )
 

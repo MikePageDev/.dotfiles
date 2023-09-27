@@ -39,3 +39,9 @@ set timeoutlen = 1000
 set NERDTree
 
 imap jk <Esc>
+
+imap ;; <Esc>A;
+imap ,, <Esc>A,
+
+nmap ;; mxA;<Esc>`x
+nmap ,, mxA,<Esc>`x

@@ -25,3 +25,4 @@ mkdir -p $HOME/.local/bin
 rm -rf $HOME/.local/bin/t
 ln -s $DOTFILES/scripts/t $HOME/.local/bin/t
 
+echo dotfiles installed

@@ -34,6 +34,7 @@ let mapleader=" "
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
 
+set number = true
 set relativenumber = true
 set timeoutlen = 1000
 set NERDTree

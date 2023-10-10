@@ -28,3 +28,9 @@ path=(
 )
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+alias m269-23j='cd "/home/michael/data-drive/Dropbox/OU/m269_algorithms_data_computability/m269-23j";source /home/michael/venvs/m269-23j/bin/activate'
+alias nb='jupyter notebook &'
+alias allowed='python3.10 "/home/michael/data-drive/Dropbox/OU/m269_algorithms_data_computability/m269-23j/allowed.py" -c "/home/michael/data-drive/Dropbox/OU/m269_algorithms_data_computability/m269-23j/m269.json"'
+alias m269-23j='cd "/home/michael/data-drive/Dropbox/OU/m269_algorithms_data_computability/m269-23j";source /home/michael/venvs/m269-23j/bin/activate'
+alias nb='jupyter notebook &'
+alias allowed='python3.10 "/home/michael/data-drive/Dropbox/OU/m269_algorithms_data_computability/m269-23j/allowed.py" -c "/home/michael/data-drive/Dropbox/OU/m269_algorithms_data_computability/m269-23j/m269.json"'

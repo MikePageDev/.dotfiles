@@ -212,11 +212,11 @@ set ::tools::graphs::type Auto
 set maintFlag 1
 set useGraphFigurine 0
 set photosMinimized 0
-set bookmarks(gamehistory) {{g {base:  Webber - Davies, 1-0,  ? 0} /home/michael/data-drive/Dropbox/Chess/databases/base 1 1 {Webber, David} {Davies, Lee} 0 ? ? 1-0} {g {my_otb_games:  Page - Bryant, 0-1,  Mercure Daventry Court Hotel (7) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Page, Michael} {Bryant, Richard BE} 2023 {Mercure Daventry Court Hotel, Daventry} 7 0-1} {g {round_1.pgn:  Blower - Page, 1-0,  Mercure Daventry Court Hotel (1) 2023} {/home/michael/data-drive/Dropbox/Chess/games/OTB/30th 4NCL Congress Under 1700/round_1.pgn} 1 1 {Blower, Trevor R} {Page, Michael} 2023 {Mercure Daventry Court Hotel, Daventry} 1 1-0} {g {base.pgn:  ? - ?, *,  ? 0} /home/michael/data-drive/Dropbox/Chess/databases/base.pgn 0 1 ? ? 0 ? ? *} {g {my_otb_games:  Jacques - Page, 1-0,  Open University (1.2) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 2 1 {Jacques, Matthew} {Page, Michael} 2023 {Open University, Milton Keynes} 1.2 1-0}}
+set bookmarks(gamehistory) {{g {my_otb_games:  Singleton - Page, =-=,  Open University (1) 2021} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Singleton, Luke} {Page, Michael} 2021 {Open University, Milton Keynes} 1 =-=} {g {my_games:  Colin Solloway - Michael Page, 1-0,  ? 2021} /home/michael/data-drive/Dropbox/Chess/databases/my_games 1 1 {Colin Solloway} {Michael Page} 2021 ? ? 1-0} {g {base:  Webber - Davies, 1-0,  ? 0} /home/michael/data-drive/Dropbox/Chess/databases/base 1 1 {Webber, David} {Davies, Lee} 0 ? ? 1-0} {g {my_otb_games:  Page - Bryant, 0-1,  Mercure Daventry Court Hotel (7) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Page, Michael} {Bryant, Richard BE} 2023 {Mercure Daventry Court Hotel, Daventry} 7 0-1} {g {round_1.pgn:  Blower - Page, 1-0,  Mercure Daventry Court Hotel (1) 2023} {/home/michael/data-drive/Dropbox/Chess/games/OTB/30th 4NCL Congress Under 1700/round_1.pgn} 1 1 {Blower, Trevor R} {Page, Michael} 2023 {Mercure Daventry Court Hotel, Daventry} 1 1-0}}
 set playerInfoHistory {{Ward, George} {Page, Michael} {Jacques, Matthew} {Borrowdale, Graham E} {Borrowdale, Graham} {Wayne, Steven} {Bhalla, Sumit} {Bryant, Richard BE} {Bryant, Richard B E} {Sloan, Cecil}}
 set defaultDBs {}
 set tbOnline Nalimov
-set glistSize 12
+set glistSize 42
 set glexport {g6: w13 W4  b13 B4  r3:m2 y4 s11 o4}
 set glistColOrder {0 1 2 3 4 5 6 7 8 9 10 11 15 17 18 19 20}
 set glistColWidth {68 190 163 40 78 106 319 55 55 55 222 24 93 120 125 55 111 63 54 70 103 120}

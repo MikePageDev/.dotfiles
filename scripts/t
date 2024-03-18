@@ -6,7 +6,8 @@ if [[ $# -eq 1 ]]; then
     selected=$1
 else
     items=`find ~/data-drive/repos -maxdepth 1 -mindepth 1 -type d && 
-      find ~/data-drive/Dropbox/cs -maxdepth 2 -mindepth 1 -type d`
+      find ~/data-drive/Dropbox/cs -maxdepth 2 -mindepth 1 -type d &&
+      find ~/data-drive/repos/php_arch -maxdepth 1 -mindepth 1 -type d`
     selected=`echo "$items" | fzf`
 fi
 

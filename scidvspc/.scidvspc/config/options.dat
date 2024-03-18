@@ -3,7 +3,7 @@
 # If you edit this file, you must preserve valid its Tcl
 # format or it will not set your Scid options properly.
 
-set boardSize 80
+set boardSize 40
 set boardStyle Merida1
 set language E
 set ::pgn::showColor 1
@@ -183,7 +183,7 @@ set FilterStepMoves 1
 set FilterMaxElo 2800
 set FilterMinElo 2100
 set FilterStepElo 100
-set FilterMaxYear 2023
+set FilterMaxYear 2024
 set FilterMinYear 1995
 set FilterStepYear 1
 set FilterGuessELO 1
@@ -212,11 +212,11 @@ set ::tools::graphs::type Auto
 set maintFlag 1
 set useGraphFigurine 0
 set photosMinimized 0
-set bookmarks(gamehistory) {{g {my_otb_games:  Singleton - Page, =-=,  Open University (1) 2021} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Singleton, Luke} {Page, Michael} 2021 {Open University, Milton Keynes} 1 =-=} {g {my_games:  Colin Solloway - Michael Page, 1-0,  ? 2021} /home/michael/data-drive/Dropbox/Chess/databases/my_games 1 1 {Colin Solloway} {Michael Page} 2021 ? ? 1-0} {g {base:  Webber - Davies, 1-0,  ? 0} /home/michael/data-drive/Dropbox/Chess/databases/base 1 1 {Webber, David} {Davies, Lee} 0 ? ? 1-0} {g {my_otb_games:  Page - Bryant, 0-1,  Mercure Daventry Court Hotel (7) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Page, Michael} {Bryant, Richard BE} 2023 {Mercure Daventry Court Hotel, Daventry} 7 0-1} {g {round_1.pgn:  Blower - Page, 1-0,  Mercure Daventry Court Hotel (1) 2023} {/home/michael/data-drive/Dropbox/Chess/games/OTB/30th 4NCL Congress Under 1700/round_1.pgn} 1 1 {Blower, Trevor R} {Page, Michael} 2023 {Mercure Daventry Court Hotel, Daventry} 1 1-0}}
-set playerInfoHistory {{Ward, George} {Page, Michael} {Jacques, Matthew} {Borrowdale, Graham E} {Borrowdale, Graham} {Wayne, Steven} {Bhalla, Sumit} {Bryant, Richard BE} {Bryant, Richard B E} {Sloan, Cecil}}
+set bookmarks(gamehistory) {{g {my_otb_games:  Osborn - Page, 0-1,  https://lichess.org/study/Qq6sMTx9/mEXsJVmV (MKC - OU) 2024} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Osborn, Mark} {Page, Michael} 2024 https://lichess.org/study/Qq6sMTx9/mEXsJVmV {MKC - OU} 0-1} {g {my_otb_games:  Wahne - Page, 1-0,  Open University (Semi Final (replay)) 2024} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 3 1 {Wahne, Steven} {Page, Michael} 2024 {Open University, Milton Keynes} {Semi Final (replay)} 1-0} {g {my_otb_games:  Page - Osborn, 0-1,  https://lichess.org/study/Qq6sMTx9/mEXsJVmV (MKC - OU) 2024} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 1 1 {Page, Michael} {Osborn, Mark} 2024 https://lichess.org/study/Qq6sMTx9/mEXsJVmV {MKC - OU} 0-1} {g {my_otb_games:  Page - Bodily, =-=,  Leighton buzzard chess club (3) 2023} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 45 1 {Page, Michael} {Bodily, Richard T} 2023 {Leighton buzzard chess club} 3 =-=} {g {my_otb_games:  Page - Welton, 0-1,  Open University (Milton Kynes C - Luton B) 2024} /home/michael/data-drive/Dropbox/Chess/databases/my_otb_games 9 1 {Page, Michael} {Welton, Desmond S} 2024 {Open University, Milton Keynes} {Milton Kynes C - Luton B} 0-1}}
+set playerInfoHistory {{Page, Michael} MPageChess {Bhalla, Sumit} {Ward, George} {Jacques, Matthew} {Borrowdale, Graham E} {Borrowdale, Graham} {Wayne, Steven} {Bryant, Richard BE} {Bryant, Richard B E}}
 set defaultDBs {}
 set tbOnline Nalimov
-set glistSize 42
+set glistSize 12
 set glexport {g6: w13 W4  b13 B4  r3:m2 y4 s11 o4}
 set glistColOrder {0 1 2 3 4 5 6 7 8 9 10 11 15 17 18 19 20}
 set glistColWidth {68 190 163 40 78 106 319 55 55 55 222 24 93 120 125 55 111 63 54 70 103 120}
@@ -247,12 +247,12 @@ set winHeight(.helpWin) 63
 set winWidth(.maintWin)  541
 set winHeight(.maintWin) 599
 set winWidth(.nedit)  456
-set winHeight(.nedit) 460
+set winHeight(.nedit) 442
 set winWidth(.pgnWin)  65
 set winHeight(.pgnWin) 20
 set winWidth(.playerInfoWin)  45
 set winHeight(.playerInfoWin) 20
-set winWidth(.plist)  363
+set winWidth(.plist)  262
 set winHeight(.plist) 63
 set winWidth(.spellcheckWin)  55
 set winHeight(.spellcheckWin) 25
@@ -293,7 +293,7 @@ set winX(.pgnWin)  -1
 set winY(.pgnWin)  -1
 set winX(.playerInfoWin)  -1
 set winY(.playerInfoWin)  -1
-set winX(.plist)  -10
+set winX(.plist)  694
 set winY(.plist)  48
 set winX(.statsWin)  -1
 set winY(.statsWin)  -1
@@ -431,18 +431,18 @@ set twinSettings(day) No
 set twinSettings(delete) Shorter
 set twinSettings(eco) No
 set twinSettings(event) No
-set twinSettings(month) Yes
+set twinSettings(month) No
 set twinSettings(moves) Yes
 set twinSettings(players) Yes
 set twinSettings(result) No
-set twinSettings(round) Yes
+set twinSettings(round) No
 set twinSettings(setfilter) Yes
 set twinSettings(site) No
 set twinSettings(skipshort) Yes
 set twinSettings(undelete) Yes
 set twinSettings(usefilter) No
 set twinSettings(variations) Yes
-set twinSettings(year) Yes
+set twinSettings(year) No
 set cleaner(cgames) 0
 set cleaner(cnames) 0
 set cleaner(eco) 1
@@ -467,7 +467,7 @@ set initialDir(epd) /home/michael
 set initialDir(stm) /home/michael
 set initialDir(sso) /home/michael
 set initialDir(sff) /home/michael
-set initialDir(pgn) {/home/michael/data-drive/Dropbox/Chess/games/OTB/30th 4NCL Congress Under 1700}
+set initialDir(pgn) /home/michael/data-drive/Dropbox/Chess
 set initialDir(report) /home/michael
 set initialDir(tablebase1) {}
 set initialDir(tablebase2) {}

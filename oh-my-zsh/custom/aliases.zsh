@@ -11,5 +11,4 @@ alias pencil='pencil --disable-seccomp-filter-sandbox'
 alias repos='cd ~/data-drive/repos/' #All repros
 
 # PHPstorm
-alias phpstorm='/home/michael/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/231.8770.68/bin/phpstorm.sh .'
-alias wphpstorm='/home/michael/.local/share/JetBrains/Toolbox/apps/phpstorm/bin/phpstorm.sh .'
+alias phpstorm='/home/michael/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/233.13135.108/bin/phpstorm.sh .'
